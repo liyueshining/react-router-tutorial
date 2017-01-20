@@ -11,22 +11,27 @@ and then run the appropriate NPM scripts for each lesson from within the lesson 
 Missing stuff that will come eventually, hopefully ... maybe.
 
 1. an app that isn't completely pointless
-- egghead.io videos
-- code splitting
-- location state
-- data integration
+
+    - egghead.io videos
+    - code splitting
+    - location state
+    - data integration
 
 
 
 2. react路由history三种模式
+
 React Router 是建立在 history 之上的。 简而言之，一个 history 知道如何去监听浏览器地址栏的变化， 并解析这个 URL 转化为 location 对象， 然后 router 使用它匹配到路由，最后正确地渲染对应的组件。
 常用的 history 有三种形式， 也可以使用 React Router 实现自定义的 history。
-- hashHistory
-    react-router默认 history ，它用到的是 URL 中的 hash（#）部分去创建形如 http://aa.bb.com/#/help 的路由。
-    支持 ie8＋，因为是 hash 值，不推荐使用。
-- browserHistory
+
+    - hashHistory
+        
+        react-router默认 history ，它用到的是 URL 中的 hash（#）部分去创建形如 http://aa.bb.com/#/help 的路由。
+        支持 ie8＋，因为是 hash 值，不推荐使用。
+    - browserHistory
+    
     browserHistory 是由 React Router 创建浏览器应用推荐的 history。它使用 History API 在浏览器中被创建用于处理 URL，新建一个像这样真实的           URL http://aa.bb.com/help。
-- memoryHistory
+    - memoryHistory
     不会在地址栏被操作或读取。
     
     
