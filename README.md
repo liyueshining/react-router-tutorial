@@ -39,6 +39,7 @@ React Router 是建立在 history 之上的。 简而言之，一个 history 知
 
 使用browserHistory，因为是使用 History API处理url的，真实的url已经改变，当我们重新刷新浏览器，内部已经重置，我们下次再访问地址http://aa.bb.com/help 的时候，之前的history已经更新，相当于直接到服务器去请求这个url，当然我们用的是前端路由，服务器肯定不知道这个是啥咯，所以返回404页面。要解决该问题 就需要在服务端设置 接受到请求的时候 都指向 index.html文件，详见 lession 12
 
+
 3. 使用中发现的问题
 
     使用的浏览器 chrome（Firefox没有这样的问题），react-router， IndexRoute 中指向的组件是一个form， form内有有一个按钮，没有设置type，按钮的点击事件里 定义了一个browserHistory.push('/oki/install')， 这样在跳转到 /oki/install 路径时 结尾会自动带上一个'?'号， 为避免这种情况 可以把按钮的点击事件定义为 form的提交事件，或者 不用form。
